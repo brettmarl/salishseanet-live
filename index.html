@@ -6,7 +6,7 @@
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#0f2747">
 <link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
-<link rel="stylesheet" href="/assets/style.css?v=15d46f9">
+<link rel="stylesheet" href="/assets/style.css?v=f023664">
 <meta property="og:site_name" content="Salish Seanet">
 <meta property="og:image" content="https://www.salishseanet.org/assets/logo.svg">
 <title>Salish Seanet · Open vessel data for the Salish Sea</title>
@@ -46,7 +46,7 @@
       them for public use in maps, apps, research, and marine safety.</p>
     <div class="cta">
       <a class="btn primary" href="#how">How it works</a>
-      <a class="btn" href="/host/">Host a station</a>
+      <a class="btn" href="/host/">Host a Lookout</a>
     </div>
   </div>
 </section>
@@ -89,8 +89,8 @@
           <rect x="34" y="38" width="52" height="44" rx="9" fill="none" stroke="currentColor" stroke-width="4"/>
           <circle cx="72" cy="66" r="4.5" fill="#2bb24c"/>
         </svg>
-        <h3>A station listens</h3>
-        <p>A Salish Seanet receiver, a small low-power box with a VHF antenna, picks up
+        <h3>A Lookout listens</h3>
+        <p>A Seanet Lookout, a small low-power box with a VHF antenna, picks up
           those broadcasts. It only listens. It never transmits on the marine band.</p>
       </div>
 
@@ -120,10 +120,10 @@
 
 <section class="tint">
   <div class="wrap">
-    <h2>Why more stations matter</h2>
+    <h2>Why more Lookouts matter</h2>
     <p class="section-lede">AIS travels by line of sight. Islands, headlands and narrow
       channels leave radio shadows that no single big station can see around. Many small
-      stations, spread around the shoreline, fill in the gaps.</p>
+      Lookouts, spread around the shoreline, fill in the gaps.</p>
     <div class="grid">
       <div class="card"><h3>Marine safety</h3><p>Better coverage means a more complete
         picture of traffic for mariners, search and rescue, and anyone keeping watch.</p></div>
@@ -155,18 +155,23 @@
 
 <section class="tint">
   <div class="wrap">
-    <h2>The station</h2>
-    <p class="section-lede">Built to be small, quiet and hands-off, so it can run
-      unattended for years.</p>
+    <h2>The Seanet Lookout</h2>
+    <p class="section-lede">A complete, weatherproof AIS receiving station for your
+      shoreline. Built to be small, quiet and hands-off, so it can run unattended for years.</p>
+    <figure class="kit">
+      <img src="/assets/station-kit.jpg" width="1479" height="1063" loading="lazy"
+        alt="A Seanet Lookout: a small weatherproof box holding the controller and
+        AIS receiver, with a Wi-Fi antenna, a marine AIS antenna on a mount, and a
+        plug-in Power over Ethernet supply.">
+    </figure>
     <div class="grid">
-      <div class="card"><h3>Dedicated AIS receiver</h3><p>A purpose-built dual-channel AIS
-        receiver listens on both AIS frequencies at once.</p></div>
+      <div class="card"><h3>Best-in-class receiver</h3><p>The high-performance
+        <a href="https://shop.wegmatt.com/products/daisy-catcher-high-performance-ais-receiver">dAISy-catcher</a>,
+        tuned for maximum range and listening on both AIS frequencies at once.</p></div>
       <div class="card"><h3>Marine VHF antenna</h3><p>Mounted as high as the site allows.
         The higher the antenna, the farther the station can hear.</p></div>
       <div class="card"><h3>Low power</h3><p>Runs on a couple of watts, from a single
         network cable (Power over Ethernet) or a USB power adapter.</p></div>
-      <div class="card"><h3>Looked after remotely</h3><p>Each station checks in every few
-        minutes, so we know when one needs attention and can update it without a visit.</p></div>
     </div>
   </div>
 </section>
@@ -179,10 +184,10 @@
         vessels can see them and avoid collisions.</li>
       <li><strong>The station only listens to marine VHF.</strong> It has no camera or
         microphone, and it does not look at or collect anything else on the host's network.</li>
-      <li><strong>What it sends:</strong> the AIS messages it receives, plus a small status
-        check-in every five minutes (firmware version, uptime, Wi-Fi signal strength and
+      <li><strong>What it sends:</strong> the AIS messages it receives, plus a small periodic
+        status check-in (firmware version, uptime, Wi-Fi signal strength and
         message counts) so we can tell it's healthy.</li>
-      <li><strong>Station location:</strong> AIS data networks ask for each receiver's
+      <li><strong>Station location:</strong> AIS data networks ask for each station's
         approximate position, so they know the area it covers. Hosts' names and addresses
         are never published.</li>
     </ul>
@@ -197,7 +202,7 @@
         transponder that broadcasts the vessel's name, position, course and speed on two
         marine VHF channels near 162&nbsp;MHz. Anyone with a receiver can hear it.</p></details>
     <details><summary>Does the station transmit anything over the radio?</summary>
-      <p>No. It's a receiver only. All it sends goes over the host's internet connection.</p></details>
+      <p>No. It only receives. All it sends goes over the host's internet connection.</p></details>
     <details><summary>How much does it cost to power?</summary>
       <p>About $3 a year. It draws about two watts, less than a single LED light bulb.</p></details>
     <details><summary>Will it slow down my internet?</summary>
@@ -212,7 +217,7 @@
     <details><summary>Where can I see the data?</summary>
       <p>On public vessel-tracking maps such as VesselFinder. AIS Hub also shares the
         combined data with organizations that contribute their own feeds.</p></details>
-    <details><summary>Can I host a station?</summary>
+    <details><summary>Can I host a Lookout?</summary>
       <p>We'd love to hear from you, especially if you have a spot with a clear view of the
         water. See <a href="/host/">hosting a station</a>.</p></details>
   </div>

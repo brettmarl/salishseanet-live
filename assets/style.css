@@ -144,3 +144,7 @@ details p { margin: .6em 0 0; color: var(--ink-soft); }
 .prose h2 { margin-top: 1.6em; font-size: 1.6rem; }
 .steps { padding-left: 1.2em; }
 .steps li { margin-bottom: .6em; }
+
+/* Hardware photo */
+.kit { margin: 0 0 24px; }
+.kit img { display: block; width: 100%; height: auto; border-radius: var(--radius); border: 1px solid var(--line); background: #fff; }
