@@ -6,7 +6,7 @@
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#0f2747">
 <link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
-<link rel="stylesheet" href="/assets/style.css?v=8d58b5c">
+<link rel="stylesheet" href="/assets/style.css?v=06f92ad">
 <meta property="og:site_name" content="Salish Seanet">
 <meta property="og:image" content="https://www.salishseanet.org/assets/logo.svg">
 <title>App privacy · Salish Seanet</title>
@@ -46,11 +46,14 @@
     <ul class="checks">
       <li><strong>Your location</strong> is used only on your phone, while Look is open,
         to work out where each vessel is from where you stand. It is never sent anywhere.</li>
-      <li><strong>The camera</strong> picture is shown on your screen and nothing else:
-        it isn't recorded, saved or sent.</li>
-      <li><strong>Your Lookout</strong> is found and talked to over your own Wi-Fi.
-        Setting one up sends your Wi-Fi name and password over Bluetooth to that Lookout
-        only, which keeps them so it can connect.</li>
+      <li><strong>The camera</strong> is used to scan your Lookout's QR code, and to show
+        the water in Look. The picture isn't recorded, saved or sent.</li>
+      <li><strong>Your Lookout</strong> sends what it hears to the Salish Seanet server,
+        and the app gets it from there using your Lookout's code (from its QR code).
+        Nothing about you is sent. Only when you tap Find on Wi-Fi does the app look for
+        your Lookout on your network.</li>
+      <li><strong>Setting up a Lookout</strong> sends your Wi-Fi name and password over
+        Bluetooth to that Lookout only, which keeps them so it can connect.</li>
       <li><strong>Vessel lookups:</strong> when you tap a vessel, the app asks Open Waters
         AIS about it by its public identity number (MMSI), and fetches its photo from
         Wikimedia Commons. Nothing about you is included. What comes back is kept on
