@@ -6,7 +6,7 @@
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#0f2747">
 <link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
-<link rel="stylesheet" href="/assets/style.css?v=27e30ee">
+<link rel="stylesheet" href="/assets/style.css?v=761dae8">
 <meta property="og:site_name" content="Salish Seanet">
 <meta property="og:image" content="https://www.salishseanet.org/assets/logo.svg">
 <title>Not found · Salish Seanet</title>
@@ -32,12 +32,27 @@
   </div>
 </header>
 <main id="main">
-<div class="wrap page-head">
+<div class="wrap page-head" id="lost">
   <p class="eyebrow">404</p>
   <h1>Lost at sea.</h1>
   <p class="lede">That page isn't here. Head back to the <a href="/">home page</a>,
     or see <a href="/host/">information for station hosts</a>.</p>
 </div>
+<!-- /join/<code> (a Lookout's QR code) lands here when the app isn't installed:
+     on a phone with the app, the link opens the app instead. -->
+<div class="wrap page-head" id="join" hidden>
+  <p class="eyebrow">Join a Lookout</p>
+  <h1>Open this in the app.</h1>
+  <p class="lede">This link adds a Lookout to the Salish Seanet app. Install the app on
+    your phone, then scan the QR code again.</p>
+</div>
+<script>
+  if (/^\/join\/[a-z0-9]+\/?$/.test(location.pathname)) {
+    document.getElementById('lost').hidden = true;
+    document.getElementById('join').hidden = false;
+    document.title = 'Join a Lookout · Salish Seanet';
+  }
+</script>
 </main>
 <footer class="site-footer">
   <svg class="shoreline" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true">
@@ -52,7 +67,7 @@
   <div class="footer-body">
     <div class="wrap footer-row">
       <p><strong>Salish Seanet</strong> · Salish Sea AIS Network</p>
-      <p><a href="mailto:hello@salishseanet.org">hello@salishseanet.org</a> · <a href="/host/">Station hosts</a></p>
+      <p><a href="mailto:hello@salishseanet.org">hello@salishseanet.org</a> · <a href="/host/">Host a Lookout</a></p>
       <p class="fine">© 2026 Salish Seanet</p>
     </div>
   </div>

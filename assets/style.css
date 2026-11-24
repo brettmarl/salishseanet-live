@@ -148,3 +148,50 @@ details p { margin: .6em 0 0; color: var(--ink-soft); }
 /* Hardware photo */
 .kit { margin: 0 0 24px; }
 .kit img { display: block; width: 100%; height: auto; border-radius: var(--radius); border: 1px solid var(--line); background: #fff; }
+
+/* What you get: the app (host page) */
+/* Phone frames at iPhone proportions: screen corners ~12% of the short side,
+   Dynamic Island 126x37pt, side buttons. Screens are real 2532x1170 shots. */
+.phone { --bez: 6px; --r: 30px; position: relative; padding: var(--bez); border-radius: var(--r); background: #08090b;
+  box-shadow: inset 0 0 0 1px #2a2d33, 0 0 0 1.5px #74797f, 0 0 0 3px #26292e, 0 18px 40px rgba(15, 39, 71, .25); }
+.screen { position: relative; overflow: hidden; border-radius: calc(var(--r) - var(--bez)); background: #000; }
+.screen img { display: block; width: 100%; height: auto; }
+.screen::after { content: ""; position: absolute; z-index: 1; background: #000; border-radius: 999px;
+  top: 1.3%; left: 50%; width: 32%; aspect-ratio: 126 / 37; transform: translateX(-50%); }
+.phone::before, .phone::after { content: ""; position: absolute; background: #4b5057; border-radius: 2px; }
+.phone::before { right: -6px; top: 27%; width: 3px; height: 12%; }                     /* power */
+.phone::after { left: -6px; top: 22%; width: 3px; height: 28px; box-shadow: 0 38px 0 #4b5057; }   /* volume pair */
+
+/* Look shot: iPhone landscape proportions, status bar inset as iOS does it */
+.phone-wide { --bez: 7px; --r: 38px; }
+.phone-wide .screen::after { content: none; }
+.phone-wide::before { right: auto; top: -6px; left: 27%; width: 12%; height: 3px; }   /* power, now on top */
+.phone-wide::after { left: 22%; top: auto; bottom: -6px; width: 40px; height: 3px; box-shadow: 54px 0 0 #4b5057; }
+.look { margin: 8px auto 56px; max-width: 560px; }
+.look figcaption { margin: 18px auto 0; max-width: 34em; text-align: center; font-size: 1.1rem; color: var(--ink-soft); }
+.perk { display: grid; grid-template-columns: 1fr auto; gap: 48px; align-items: center; max-width: 760px; margin: 0 auto; }
+.perk p { color: var(--ink-soft); }
+.perk .exclusive { color: var(--ink); margin: 0; }
+.stores { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 22px; }
+.store { display: inline-flex; flex-direction: column; padding: 8px 18px; border-radius: 12px; background: var(--ink); color: var(--bg); font-weight: 700; line-height: 1.2; }
+.store small { font-weight: 500; font-size: .75rem; opacity: .75; }
+.phone-show { margin: 0; width: 200px; }
+.phone-show .screen { aspect-ratio: 1170 / 2532; }
+.phone-show .screen img { position: absolute; inset: 0; height: 100%; object-fit: cover; opacity: 0; transition: opacity .7s ease; }
+.phone-show .screen img.on { opacity: 1; }
+.dots { display: flex; justify-content: center; gap: 4px; margin-top: 10px; }
+.dots button { width: 22px; height: 22px; padding: 0; border: 0; background: none; cursor: pointer; }
+.dots button::before { content: ""; display: block; width: 8px; height: 8px; margin: auto; border-radius: 50%; background: var(--line); }
+.dots button.on::before { background: var(--teal); }
+@media (max-width: 760px) {
+  .phone-wide { --bez: 5px; --r: 25px; }
+  .perk { grid-template-columns: 1fr; gap: 28px; }
+  .phone-show { margin: 0 auto; }
+}
+
+/* Host page intro: text beside the hardware */
+.host-head { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+.deck { margin: 0; }
+.deck svg { display: block; width: 100%; height: auto; }
+.deck figcaption { margin-top: 10px; font-size: .9rem; color: var(--ink-soft); }
+@media (max-width: 860px) { .host-head { grid-template-columns: 1fr; gap: 24px; } }

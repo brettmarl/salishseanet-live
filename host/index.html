@@ -6,13 +6,13 @@
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#0f2747">
 <link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
-<link rel="stylesheet" href="/assets/style.css?v=27e30ee">
+<link rel="stylesheet" href="/assets/style.css?v=761dae8">
 <meta property="og:site_name" content="Salish Seanet">
 <meta property="og:image" content="https://www.salishseanet.org/assets/logo.svg">
-<title>Station hosts · Salish Seanet</title>
-<meta name="description" content="What hosting a Salish Seanet AIS station involves, and help for current hosts.">
-<meta property="og:title" content="Hosting a Salish Seanet station">
-<meta property="og:description" content="What hosting a volunteer AIS station involves, and help for current hosts.">
+<title>Host a Lookout · Salish Seanet</title>
+<meta name="description" content="What hosting a Seanet Lookout involves, what you get, and answers to common questions.">
+<meta property="og:title" content="Host a Seanet Lookout">
+<meta property="og:description" content="What hosting a Seanet Lookout involves, and what you get.">
 <link rel="canonical" href="https://www.salishseanet.org/host/">
 </head>
 <body>
@@ -36,12 +36,45 @@
 </header>
 <main id="main">
 
-<div class="wrap page-head">
-  <p class="eyebrow">For station hosts</p>
-  <h1>Thank you for hosting.</h1>
-  <p class="lede">Seanet Lookouts live on decks, docks, rooftops and boathouses
-    around the Salish Sea. Hosts make the network possible. Here's what's involved,
-    and what to do if something looks wrong.</p>
+<div class="wrap page-head host-head">
+  <div>
+    <p class="eyebrow">Join Salish Seanet</p>
+    <h1>Host a Lookout.</h1>
+    <p class="lede">Seanet Lookouts live on decks, docks, rooftops and boathouses
+      around the Salish Sea. Each one fills in another piece of the picture of what's
+      moving on the water. Here's what it takes to host one.</p>
+  </div>
+  <figure class="deck">
+    <svg viewBox="0 0 520 400" role="img" aria-labelledby="kit-title">
+      <title id="kit-title">A Seanet Lookout: a small white weatherproof box with a green light, cabled to a slim white marine antenna.</title>
+      <rect width="520" height="400" rx="18" fill="var(--sky)"/>
+      <g fill="rgba(15,39,71,.10)"><ellipse cx="190" cy="352" rx="92" ry="10"/><ellipse cx="392" cy="352" rx="62" ry="8"/></g>
+      <!-- cable -->
+      <path d="M176 330c0 40 64 30 120 14s96-6 96-6" fill="none" stroke="var(--ink)" stroke-width="3.5" stroke-linecap="round"/>
+      <g stroke="#0f2747" stroke-linejoin="round">
+        <!-- Wi-Fi stub -->
+        <rect x="226" y="84" width="14" height="70" rx="7" fill="#fff" stroke-width="2.5"/>
+        <rect x="222" y="148" width="22" height="14" rx="3" fill="#e6edf3" stroke-width="2.5"/>
+        <!-- box -->
+        <rect x="120" y="154" width="140" height="176" rx="18" fill="#fff" stroke-width="3.5"/>
+        <rect x="134" y="168" width="112" height="148" rx="10" fill="none" stroke="#d3deE8" stroke-width="2"/>
+        <rect x="110" y="190" width="12" height="26" rx="3" fill="#e6edf3" stroke-width="2.5"/>
+        <rect x="110" y="268" width="12" height="26" rx="3" fill="#e6edf3" stroke-width="2.5"/>
+        <rect x="164" y="328" width="24" height="12" rx="3" fill="#e6edf3" stroke-width="2.5"/>
+        <!-- antenna -->
+        <path d="M392 150V26" stroke="var(--ink)" stroke-width="4" stroke-linecap="round"/>
+        <rect x="386" y="138" width="12" height="16" rx="2" fill="#c9d3dc" stroke-width="2.5"/>
+        <path d="M362 176c0-14 13-24 30-24s30 10 30 24z" fill="#fff" stroke-width="3"/>
+        <path d="M376 176h32l-6 132h-20z" fill="#fff" stroke-width="3"/>
+        <path d="M352 338h80v8h-80z" fill="#fff" stroke-width="3"/>
+        <path d="M382 308h20v30h-20z" fill="#fff" stroke-width="3"/>
+      </g>
+      <circle cx="226" cy="296" r="7" fill="#2bb24c"/>
+      <circle cx="226" cy="296" r="13" fill="#2bb24c" opacity=".18"/>
+    </svg>
+    <figcaption>A weatherproof box about 5 × 3 × 3 inches, and a slim marine antenna.
+      The antenna goes up on your roofline, and the box tucks away out of sight.</figcaption>
+  </figure>
 </div>
 
 <section>
@@ -61,17 +94,90 @@
           <li>The Seanet Lookout itself: the box, antenna and mounting hardware</li>
           <li>Setup and registration with the AIS data networks</li>
           <li>Remote monitoring and software updates</li>
+          <li>The Salish Seanet app, to see the boats your Lookout hears</li>
         </ul>
       </div>
       <div class="card">
-        <h3>A great site</h3>
-        <p>A clear, unobstructed view over open water. Height matters most: VHF radio
-          travels by line of sight, so every bit of extra antenna height extends
-          how far the station can hear.</p>
+        <h3>What makes a great site</h3>
+        <ul class="checks">
+          <li>A clear view over open water</li>
+          <li>Height: radio travels by line of sight, so every extra foot lets your
+            Lookout hear farther</li>
+          <li>Nothing tall in the way: hills, trees and buildings block the signal</li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
+
+<section id="app" class="tint">
+  <div class="wrap">
+    <p class="eyebrow">Exclusive to hosts</p>
+    <h2>See what your Lookout hears.</h2>
+    <p class="section-lede">Your Lookout is listening to the boats around you. The Salish
+      Seanet app lets you listen in, too. See every boat your Lookout picks up, follow
+      them on a live map, or point your phone across the water to find out exactly what
+      you're looking at.</p>
+
+    <figure class="look">
+      <div class="phone phone-wide"><div class="screen">
+        <img src="/assets/app/look.jpg" width="1672" height="773" loading="lazy"
+          alt="The Look view: the camera picture of the water, with the ferry WSF Yakima and two other boats labelled with their distance and speed.">
+      </div></div>
+      <figcaption><em>Hold up your phone and see boats identified right in the camera
+        view, with their names, distances and speeds.</em></figcaption>
+    </figure>
+
+    <div class="perk">
+      <div>
+        <h3>The view from your shore, with names attached.</h3>
+        <p>Wondering about that ferry rounding the point? The tug working its way up the
+          channel? The ship passing in the distance?</p>
+        <p>Your Lookout is already tracking them. The app puts that information in your
+          hands. Browse the boats your Lookout hears, see where they're moving on a map,
+          and tap for photos and details. Or switch to Look mode and see their names
+          floating over the water, right where the boats are.</p>
+        <p class="exclusive"><strong>Available exclusively to Seanet Lookout hosts.</strong></p>
+        <div class="stores">
+          <span class="store">App Store<small>Coming soon</small></span>
+          <span class="store">Google Play<small>Coming soon</small></span>
+        </div>
+      </div>
+      <figure class="phone-show" aria-label="More screens from the Salish Seanet app">
+        <div class="phone"><div class="screen">
+          <img class="on" src="/assets/app/lookout.jpg" width="600" height="1298"
+            alt="The app's Lookout screen: listening, 54 vessels, with ferries and boats listed by speed and distance.">
+          <img src="/assets/app/map.jpg" width="600" height="1298"
+            alt="A map of the San Juan Islands with coloured boat markers.">
+          <img src="/assets/app/vessel.jpg" width="600" height="1298"
+            alt="Details for the ferry WSF Yakima: photo, speed, heading, size and operator.">
+        </div></div>
+        <div class="dots">
+          <button type="button" class="on" aria-label="Show screen 1" aria-current="true"></button>
+          <button type="button" aria-label="Show screen 2"></button>
+          <button type="button" aria-label="Show screen 3"></button>
+        </div>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<script>
+(() => {
+  const show = document.querySelector('.phone-show');
+  const imgs = [...show.querySelectorAll('.phone img')];
+  const dots = [...show.querySelectorAll('.dots button')];
+  let i = 0, timer;
+  const go = (n) => {
+    imgs[i].classList.remove('on'); dots[i].classList.remove('on'); dots[i].removeAttribute('aria-current');
+    i = (n + imgs.length) % imgs.length;
+    imgs[i].classList.add('on'); dots[i].classList.add('on'); dots[i].setAttribute('aria-current', 'true');
+  };
+  dots.forEach((d, n) => d.addEventListener('click', () => { clearInterval(timer); go(n); }));
+  if (!matchMedia('(prefers-reduced-motion: reduce)').matches)
+    timer = setInterval(() => go(i + 1), 3500);
+})();
+</script>
 
 <section id="costs">
   <div class="wrap">
@@ -93,25 +199,6 @@
           to your other devices.</p>
       </div>
     </div>
-  </div>
-</section>
-
-<section class="tint">
-  <div class="wrap prose">
-    <h2>If something looks wrong</h2>
-    <p>We monitor every station and usually notice a problem before you do, but if you
-      think yours has stopped working:</p>
-    <ol class="steps">
-      <li><strong>Restart it.</strong> Unplug the power (or network cable, for Power over
-        Ethernet), wait ten seconds, and plug it back in. It's ready again within a minute.</li>
-      <li><strong>Changed your Wi-Fi?</strong> If you have a new router, network name or
-        password, the station needs the new details. Get in touch and we'll walk you through
-        it. It takes a couple of minutes with our setup app, during the first 30 seconds
-        after the station powers up.</li>
-      <li><strong>Moving or retiring a station?</strong> Let us know before you take it
-        down, so we can update the data networks.</li>
-    </ol>
-    <p>The station is safe to unplug at any time.</p>
   </div>
 </section>
 
@@ -138,7 +225,7 @@
   <div class="footer-body">
     <div class="wrap footer-row">
       <p><strong>Salish Seanet</strong> · Salish Sea AIS Network</p>
-      <p><a href="mailto:hello@salishseanet.org">hello@salishseanet.org</a> · <a href="/host/">Station hosts</a></p>
+      <p><a href="mailto:hello@salishseanet.org">hello@salishseanet.org</a> · <a href="/host/">Host a Lookout</a></p>
       <p class="fine">© 2026 Salish Seanet</p>
     </div>
   </div>

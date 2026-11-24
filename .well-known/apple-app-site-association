@@ -1,0 +1,12 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["J62L3NJF4W.org.salishseanet.SalishSeanet"],
+        "components": [{ "/": "/join/*", "comment": "A Lookout's card: open the app to join it" }],
+        "appID": "J62L3NJF4W.org.salishseanet.SalishSeanet",
+        "paths": ["/join/*"]
+      }
+    ]
+  }
+}
