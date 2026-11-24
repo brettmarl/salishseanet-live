@@ -6,7 +6,7 @@
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#0f2747">
 <link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
-<link rel="stylesheet" href="/assets/style.css?v=761dae8">
+<link rel="stylesheet" href="/assets/style.css?v=8d58b5c">
 <meta property="og:site_name" content="Salish Seanet">
 <meta property="og:image" content="https://www.salishseanet.org/assets/logo.svg">
 <title>Not found · Salish Seanet</title>
@@ -39,18 +39,42 @@
     or see <a href="/host/">information for station hosts</a>.</p>
 </div>
 <!-- /join/<code> (a Lookout's QR code) lands here when the app isn't installed:
-     on a phone with the app, the link opens the app instead. -->
-<div class="wrap page-head" id="join" hidden>
-  <p class="eyebrow">Join a Lookout</p>
-  <h1>Open this in the app.</h1>
-  <p class="lede">This link adds a Lookout to the Salish Seanet app. Install the app on
-    your phone, then scan the QR code again.</p>
-</div>
+     on a phone with the app, the link opens the app instead. Someone who has
+     just found the box: what it is, that there's an app, how to connect. -->
+<section id="join" hidden>
+  <div class="wrap">
+    <p class="eyebrow">Seanet Lookout</p>
+    <h1>You've found a Seanet Lookout.</h1>
+    <div class="perk">
+      <div>
+        <p class="lede">This small receiver listens to the radio signals that ships and
+          boats broadcast about themselves: who they are, where they are, and where
+          they're heading. It's part of <a href="/">Salish Seanet</a>, a network of
+          Lookouts hosted by volunteers around the Salish Sea.</p>
+        <h3>See what it hears, in the Salish Seanet app.</h3>
+        <p>Every boat this Lookout picks up, on a list and a live map, with photos and
+          details. Or hold up your phone and see their names right over the water.</p>
+        <p><strong>Install the app, then scan this QR code again to connect to this Lookout.</strong></p>
+        <div class="stores">
+          <span class="store">App Store<small>Coming soon</small></span>
+          <span class="store">Google Play<small>Coming soon</small></span>
+        </div>
+        <p style="margin-top: 28px"><a href="/">About Salish Seanet</a> · <a href="/host/">Host a Lookout</a></p>
+      </div>
+      <figure class="phone-show">
+        <div class="phone"><div class="screen">
+          <img class="on" src="/assets/app/lookout.jpg" width="600" height="1298"
+            alt="The app's Lookout screen: listening, 54 vessels, with ferries and boats listed by speed and distance.">
+        </div></div>
+      </figure>
+    </div>
+  </div>
+</section>
 <script>
   if (/^\/join\/[a-z0-9]+\/?$/.test(location.pathname)) {
     document.getElementById('lost').hidden = true;
     document.getElementById('join').hidden = false;
-    document.title = 'Join a Lookout · Salish Seanet';
+    document.title = "You've found a Seanet Lookout · Salish Seanet";
   }
 </script>
 </main>
